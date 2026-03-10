@@ -147,7 +147,7 @@ Example:
 oc adm policy add-cluster-role-to-user cluster-admin adam-rocks
 ```
 
-![openshift-assign-cluster-roles](_static/assign_cluster_roles.png)
+![openshift-assign-cluster-role](_static/assign_cluster_role.png)
 
 This grants the user **cluster-admin privileges**, allowing broad administrative control.
 
