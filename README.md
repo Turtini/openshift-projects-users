@@ -223,17 +223,3 @@ You have successfully:
 
 These steps represent the basic workflow used by administrators to manage user access within OpenShift environments.
 
----
-
-## Training Loop Summary
-
-This exercise demonstrated how OpenShift uses **Role-Based Access Control (RBAC)** to manage permissions.
-
-Key concepts include:
-
-* Projects are implemented as Kubernetes namespaces
-* Cluster roles grant global permissions
-* Project roles grant namespace-level access
-* Role bindings connect users to permissions
-
-Understanding RBAC is essential for securely operating multi-user OpenShift environments.
