@@ -63,7 +63,7 @@ Your username and password will be provided to you.
 
 Once logged in, you will see the OpenShift dashboard.
 
-![openshift-login](_static/openshift-login.png)
+![openshift-login](_static/login.png)
 
 ---
 
@@ -73,9 +73,11 @@ In the upper-right corner of the console, select the **command line terminal ico
 
 This opens the **OpenShift Web Terminal**, which allows you to run `oc` commands directly from the browser.
 
-![openshift-web-terminal](_static/openshift-web-terminal.png)
+![openshift-web-terminal](_static/cli.png)
 
 The terminal will display a shell environment where OpenShift CLI commands can be executed.
+
+![openshift-terminal](_static/openshiftterm.png)
 
 ---
 
@@ -92,6 +94,7 @@ Example:
 oc new-project project-britney-spears
 ```
 
+![openshift-new-project](_static/oc_new_project.png)
 
 **Important:**  
 Project names must be lowercase. Uppercase characters will produce an error.
@@ -111,6 +114,8 @@ Run:
 ```
 oc get users
 ```
+
+![openshift-assign-user](_static/assign_user.png)
 
 This command displays the list of users currently registered in the cluster.
 
@@ -142,6 +147,8 @@ Example:
 oc adm policy add-cluster-role-to-user cluster-admin adam-rocks
 ```
 
+![openshift-assign-cluster-roles](_static/assign_cluster_roles.png)
+
 This grants the user **cluster-admin privileges**, allowing broad administrative control.
 
 Cluster roles should be granted carefully because they provide access across all namespaces.
@@ -164,6 +171,7 @@ Example:
 oc policy add-role-to-user admin adam-rocks -n project-britney-spears
 ```
 
+![openshift-add-role](_static/add_role.png)
 
 This command:
 
@@ -195,6 +203,9 @@ User: adam-rocks
 Namespace: project-britney-spears
 ```
 
+![openshift-role-bindings](_static/rolebindings.png)
+
+![openshift-print](_static/print.png)
 
 This confirms the user now has the appropriate permissions.
 
