@@ -89,7 +89,7 @@ oc new-project <project-name>
 
 Example:
 ```
-oc new-project demo-project
+oc new-project project-britney-spears
 ```
 
 
@@ -139,7 +139,7 @@ oc adm policy add-cluster-role-to-user <role> <username>
 Example:
 
 ```
-oc adm policy add-cluster-role-to-user cluster-admin user1
+oc adm policy add-cluster-role-to-user cluster-admin adam-rocks
 ```
 
 This grants the user **cluster-admin privileges**, allowing broad administrative control.
@@ -161,7 +161,7 @@ oc policy add-role-to-user <role> <username> -n <project>
 Example:
 
 ```
-oc policy add-role-to-user admin user1 -n demo-project
+oc policy add-role-to-user admin adam-rocks -n project-britney-spears
 ```
 
 
@@ -191,8 +191,8 @@ Example output will show:
 
 ```
 Role: admin
-User: user1
-Namespace: demo-project
+User: adam-rocks
+Namespace: project-britney-spears
 ```
 
 
